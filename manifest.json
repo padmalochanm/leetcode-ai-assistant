@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Leetcode Revision",
+    "version": "1.0",
+    "description": "Shows how to display the side panel only on google.com using the Side Panel API.",
+    "background": {
+      "service_worker": "service-worker.js"
+    },
+    "action": {
+      "default_title": "Click to open panel"
+    },
+    "permissions": ["sidePanel", "tabs", "scripting", "cookies", "storage"],
+    "host_permissions": ["https://leetcode.com/*"],
+    "commands": {
+      "_execute_action": {
+        "suggested_key": {
+          "default": "Ctrl+B",
+          "mac": "Command+B"
+        }
+      }
+    },
+    "icons": {
+      "16": "images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-36.png",
+      "48": "images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-72.png",
+      "128": "images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-100.png"
+    }
+  }

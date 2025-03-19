@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+button {
+    background-color: #02747d;
+    color: white;
+    border: none;
+    border-radius: 15%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #024951;
+}
+
+#loader {
+    width: 24px;
+    height: 24px;
+    border: 4px solid #03374f;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
