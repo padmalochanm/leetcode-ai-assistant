@@ -25,7 +25,6 @@ button:hover {
     animation: spin 1s linear infinite;
     margin-top: 10px;
 }
-
 .hidden {
     display: none;
 }

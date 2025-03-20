@@ -121,7 +121,7 @@ chrome.tabs.onUpdated.addListener(async (tabId, info, tab) => {
 // Listener to receive messages from the popup/sidepanel
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
     if (message.action === "analyzeCode") {
-        fetch("http://localhost:5000/analyze-code", {
+        fetch("https://leetcode-ai-assistant.onrender.com/analyze-code", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
