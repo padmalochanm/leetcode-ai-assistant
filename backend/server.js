@@ -6,7 +6,7 @@ import fetch from "node-fetch"
 const app = express();
 dotenv.config();
 app.use(cors({
-    origin: "*", // Or specify your extension: chrome-extension://YOUR_EXTENSION_ID
+    origin: "chrome-extension://afladnkiehlhbababnneileadcpopdfo", // Or specify your extension: chrome-extension://YOUR_EXTENSION_ID
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
   }));
